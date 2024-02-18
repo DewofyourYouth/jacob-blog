@@ -1,0 +1,32 @@
+{{ define "main" }}
+  {{ if .Params.Image }}
+    {{ $featuredImage := .Params.Image }}
+
+
+    <div
+      class="post-header"
+      style="min-height: 34vh; 
+      margin-bottom: 4em;
+      background: linear-gradient(#33333300 30%, #333
+      ),      url('{{ .RelPermalink }}/{{ $featuredImage }}');
+      background-size: cover; 
+        min-height: `{{ if compare.Eq .Title "About" }}
+        700px
+      {{ else }}
+        30vh
+      {{ end }}`;
+      background-position: center center;"
+    >
+      <h1>{{ .Title }}</h1>
+    </div>
+  {{ else }}
+    <h1>{{ .Title }}</h1>
+  {{ end }}
+  {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+  {{ $dateHuman := .Date | time.Format ":date_long" }}
+  <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+  <div class="single-content">
+    {{ .Content }}
+  </div>
+  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+{{ end }}

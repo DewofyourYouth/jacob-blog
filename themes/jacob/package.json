@@ -1,0 +1,16 @@
+{
+  "name": "jacob-theme",
+  "version": "1.0.0",
+  "description": "A theme for the Jacob Shore blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jacob Shore (@DewofyourYouth)",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "prettier-plugin-go-template": "^0.0.15",
+    "sass": "^1.71.0"
+  }
+}

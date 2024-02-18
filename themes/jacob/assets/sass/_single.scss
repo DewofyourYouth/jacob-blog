@@ -1,0 +1,40 @@
+@use "sass:color";
+@use "base";
+
+.post-header {
+  border-radius: 2em;
+  display: grid;
+  justify-content: center;
+  align-content: end;
+
+  h1 {
+    font-size: 4rem;
+    text-shadow: 3px 5px 10px base.$charcoal-gray;
+  }
+}
+
+.single-content {
+  padding: 2rem;
+  table {
+    padding: 1em;
+    background-color: lighten(base.$charcoal-gray, 5);
+    width: fit-content;
+    margin-bottom: 1em;
+    th {
+      font-family: "Josefin Sans", sans-serif;
+      border-bottom: 1px solid base.$text-color;
+      padding-bottom: 5px;
+    }
+    td {
+      padding: 0 10px;
+      font-family: "Libre Baskerville", serif;
+      font-weight: 400;
+      font-style: italic;
+    }
+  }
+
+  img {
+    max-width: 80%;
+    max-height: 400px;
+  }
+}

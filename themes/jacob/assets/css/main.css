@@ -1,0 +1,161 @@
+body {
+  color: #f9f9f9;
+  margin: 0;
+  background-color: #333333;
+}
+
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+header {
+  text-align: center;
+  background: linear-gradient(to left, rgba(111, 0, 0, 0.8235294118), rgba(255, 217, 0, 0.8705882353)), url(../images/synagogue.jpeg);
+  background-size: cover;
+  background-position: center;
+  margin-top: 0;
+  padding: 1.5em;
+}
+header nav {
+  width: 100%;
+}
+header nav ul {
+  margin-left: 0;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+header nav ul li {
+  list-style-type: none;
+}
+header nav a {
+  color: #f9f9f9;
+  text-decoration: none;
+  font-size: 1.3em;
+  font-family: "Josefin Sans", sans-serif;
+}
+header nav a:hover {
+  text-decoration: underline;
+  color: #ffd400;
+}
+
+main,
+footer {
+  margin: 2em;
+  font-family: "Libre Baskerville", serif;
+  padding-bottom: 3em;
+}
+main h2,
+main h3,
+main h4s,
+footer h2,
+footer h3,
+footer h4s {
+  font-family: "Josefin Sans", sans-serif;
+}
+main h2 a,
+main h3 a,
+main h4s a,
+footer h2 a,
+footer h3 a,
+footer h4s a {
+  color: #ffd400;
+}
+
+main {
+  border-bottom: 1px solid #ffd400;
+}
+
+.post-list {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5em;
+  line-height: 2;
+  font-weight: 500;
+}
+
+.post-list-item {
+  max-width: 1500px;
+  height: 400px;
+  border-radius: 2em;
+  display: flex;
+  background-size: cover;
+  background-position: center center;
+}
+.post-list-item .featured-image {
+  height: 350px;
+  min-width: 100px;
+}
+.post-list-item .featured-image img {
+  border-radius: 2em;
+  object-fit: cover;
+  max-width: 800px;
+}
+.post-list-item .info {
+  padding: 2em;
+  background-color: #333333;
+}
+.post-list-item .info-featured {
+  height: 300px;
+  border-radius: 0 0 0 2em;
+  background: linear-gradient(to right, rgba(51, 51, 51, 0.568) 0%, rgba(51, 51, 51, 0.694) 1%, rgba(51, 51, 51, 0.9) 4%);
+}
+
+.pagination li {
+  font-family: "Roboto", sans-serif;
+  display: inline-block;
+}
+.pagination li a {
+  color: #ffd400;
+  font-size: 1.5em;
+}
+.pagination li a:hover {
+  color: #dc143c;
+}
+.pagination .active a {
+  color: #f9f9f9;
+}
+
+.post-header {
+  border-radius: 2em;
+  display: grid;
+  justify-content: center;
+  align-content: end;
+}
+.post-header h1 {
+  font-size: 4rem;
+  text-shadow: 3px 5px 10px #333333;
+}
+
+.single-content {
+  padding: 2rem;
+}
+.single-content table {
+  padding: 1em;
+  background-color: #404040;
+  width: fit-content;
+  margin-bottom: 1em;
+}
+.single-content table th {
+  font-family: "Josefin Sans", sans-serif;
+  border-bottom: 1px solid #f9f9f9;
+  padding-bottom: 5px;
+}
+.single-content table td {
+  padding: 0 10px;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.single-content img {
+  max-width: 80%;
+  max-height: 400px;
+}
+
+/*# sourceMappingURL=main.css.map */

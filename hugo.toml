@@ -1,0 +1,22 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Jacob Shore Blog'
+theme = 'jacob'
+sectionPagesMenu = 'main'
+[taxonomies]
+    category = 'categories'
+    tags = 'tags'
+
+[menus]
+[[menus.main]]
+    name = 'Home'
+    pageRef = '/'
+    weight = 10
+[[menus.main]]
+    name = 'About'
+    pageRef = '/about'
+    weight = 20
+[[menus.main]]
+    name = 'Topics'
+    pageRef = '/categories'
+    weight = 40

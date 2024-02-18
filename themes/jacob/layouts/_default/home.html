@@ -1,0 +1,27 @@
+{{ define "main" }}
+  {{ .Content }}
+  <div class="post-list">
+    {{ $pages := where .Site.RegularPages "Section" "post" }}
+    {{ range (.Paginate $pages 5).Pages }}
+      {{ $featuredImage := .Params.Image }}
+      <div
+        class="post-list-item"
+        {{ if $featuredImage }}
+          style="background-image:
+          url('{{ .RelPermalink }}/{{ $featuredImage }}')"
+        {{ end }}
+
+      >
+        {{ if .Params.Image }}
+          <div class="featured-image"></div>
+        {{ end }}
+        <div class="info {{ if $featuredImage }}info-featured{{ end }}">
+          <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+          <small>{{ .Date | time.Format ":date_medium" }}</small>
+          <p>{{ .Summary }}</p>
+        </div>
+      </div>
+    {{ end }}
+    {{ template "_internal/pagination.html" . }}
+  </div>
+{{ end }}
