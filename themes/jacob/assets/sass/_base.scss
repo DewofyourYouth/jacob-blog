@@ -73,3 +73,10 @@ footer {
 main {
   border-bottom: 1px solid $gold;
 }
+
+a {
+  color: $text-color;
+  &:hover {
+    color: $crimson-red;
+  }
+}

@@ -6,7 +6,11 @@
         {{ range .Pages }}
         <div>
             <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-          {{ .Summary }}
+           {{ if .Summary}}
+            <small>{{ .Date | time.Format ":date_long" }}</small>
+            <hr />
+            {{ end }}
+            <div>{{ .Summary }}</div>
         </div>
         {{ end }}
       </ul>
