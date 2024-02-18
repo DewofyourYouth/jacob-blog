@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <main>
+    <div>
+      <h1>{{ .Title }}</h1>
+      <div>
+        {{ range .Pages }}
+        <div>
+            <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+          {{ .Summary }}
+        </div>
+        {{ end }}
+      </ul>
+      <!-- ranges through each of the content files associated with a particular taxonomy term and renders the summary.html content view -->
+    </div>
+  </main>
+{{ end }}
