@@ -48,6 +48,12 @@ footer {
   font-family: "Libre Baskerville", serif;
   padding-bottom: 3em;
 }
+@media screen and (max-width: 900px) {
+  main,
+  footer {
+    margin: 0;
+  }
+}
 main h2,
 main h3,
 main h4s,
@@ -133,8 +139,15 @@ main {
   text-shadow: 3px 5px 10px #333333;
 }
 
-.single-content {
-  padding: 2rem;
+@media screen and (min-width: 900px) {
+  .single-content {
+    padding: 2rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .single-content {
+    padding: 0.5rem;
+  }
 }
 .single-content table {
   padding: 1em;

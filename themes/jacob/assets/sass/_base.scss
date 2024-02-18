@@ -54,6 +54,9 @@ header {
 main,
 footer {
   margin: 2em;
+  @media screen and (max-width: 900px) {
+    margin: 0;
+  }
   font-family: "Libre Baskerville", serif;
   padding-bottom: 3em;
   h2,

@@ -14,7 +14,12 @@
 }
 
 .single-content {
-  padding: 2rem;
+  @media screen and (min-width: 900px) {
+    padding: 2rem;
+  }
+  @media screen and (max-width: 900px) {
+    padding: 0.5rem;
+  }
   table {
     padding: 1em;
     background-color: lighten(base.$charcoal-gray, 5);
